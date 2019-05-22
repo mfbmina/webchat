@@ -24,6 +24,7 @@ defmodule WebchatWeb do
       import Plug.Conn
       import WebchatWeb.Gettext
       alias WebchatWeb.Router.Helpers, as: Routes
+      alias Webchat.Repo
     end
   end
 

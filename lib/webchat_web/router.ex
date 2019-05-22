@@ -16,7 +16,9 @@ defmodule WebchatWeb.Router do
   scope "/", WebchatWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", MessagesController, :index
+
+    resources "/messages", MessagesController
   end
 
   # Other scopes may use custom stacks.

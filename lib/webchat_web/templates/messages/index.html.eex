@@ -1,0 +1,13 @@
+<h1>messages</h1>
+
+<ul>
+  <%= for message <- @messages do %>
+    <li>
+      <%= message.content %>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <%= link "New message", to: Routes.messages_path(@conn, :new) %>
+</div>
